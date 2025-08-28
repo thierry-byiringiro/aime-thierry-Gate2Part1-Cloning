@@ -726,6 +726,9 @@
   .bg-\[\#212b59\] {
     background-color: #212b59;
   }
+  .bg-\[\#dbdbd3\] {
+    background-color: #dbdbd3;
+  }
   .bg-\[\#edede9\] {
     background-color: #edede9;
   }
@@ -761,6 +764,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
