@@ -19,11 +19,11 @@
 <body>
     <div class="mx-auto bg-[#f6f6f4]">
         <div class="w-full relative">
-            <img src="/assets/wlcmbg.jpeg" alt="" class="w-full object-cover h-[800px]">
+            <img src="/assets/wlcmbg.jpeg" alt="" class="w-full object-none md:object-cover lg:object-cover h-[130vh]">
             <div class="absolute inset-0 text-amber-50 flex flex-col  space-y-10 px-6">
                 <div class="flex flex-row justify-between w-full  pt-2 font-light ">
                     <img src="./assets/logo1.svg" alt="" class="brightness-0 invert-100 w-55 h-20">
-                    <ul class="flex flex-row group space-x-4 text-white font-semibold items-center noto">
+                    <ul class="lg:flex flex-row hidden group space-x-4 text-white font-semibold items-center noto">
                         <li class="hover:underline cursor-pointer">News</li>
                         <li class="hover:underline cursor-pointer">Jobs</li>
                         <li class="hover:underline cursor-pointer">Donate</li>
@@ -32,8 +32,12 @@
                         <li class="hover:underline cursor-pointer">Staff</li>
                         <li class="hover:underline cursor-pointer">Student</li>
                     </ul>
+                    <ul class="flex flex-row space-x-3 lg:hidden">
+                        <img src="./assets/se.svg" alt="" class="w-5 brightness-0 invert-100">
+                        <img src="./assets/three.svg" alt="" class="w-5 brightness-0 invert-100">
+                    </ul>
                 </div>
-                <div class="flex flex-row justify-between pt-2 ">
+                <div class="lg:flex flex-row justify-between pt-2 hidden">
                     <ul class="flex flex-row gap-8 noto1">
                         <div class="flex flex-row space-x-2">
                             <li>Study</li>
@@ -58,40 +62,49 @@
                     </ul>
                     <p class="text-lg noto hover:underline hover:cursor-pointer">Seach the site</p>
                 </div>
-                <div class="pt-10 flex flex-col w-1/2">
-                    <div class="border-3 border-whit flex p-3 items-center  w-[119%]  h-[130px]">
-                        <p class="text-[40px] noto2">
-                            YOUR NEXT CHAPTER START RIGHT NOW
+                <div class="pt-10 flex flex-col w-1/2 md:mt-30">
+                    <div
+                        class="border-3 border-white flex p-3 items-center  w-[200%] md:w-[121%] h-[100px] md:h-[140px] md:p-8">
+                        <p class="md:text-[45px]  md:noto2 noto2 text-[36px] font-bold flex items-center">
+                            YOUR NEXT CHAPTER STARTS NOW
                         </p>
                     </div>
-                    <div class="border-3 border-white w-10/12/10 p-3  h-[130px] border-t-2">
-                        <p class="text-2xl noto">Welcome to Liverpool! If you're joining us in September, we can't wait
+                    <div class="border-3 border-white md:w-11/12 p-3 w-[500px]  md:h-[130px] h-[120px] border-t-2">
+                        <p class="md:text-xl noto text-[20px] md:">Welcome to Liverpool! If you're joining us in
+                            September, we can't wait
                             to meet you. Find out
                             what you can do now to get ready.</p>
                     </div>
                 </div>
-                <div class="mt-10 p-5 border-[1px] border-white flex  w-2/9">
+                <div class="mt-8 p-5 border-[1px] border-white flex  md:w-2/9 w-[100%] justify-center">
                     <p class="noto text-xl">Explore our welcome acitivies</p>
                     <img src="./assets/ra.svg" alt="" class="brightness-0 invert-100 w-5">
                 </div>
             </div>
-            <div class="w-full bg-[#212b59] flex flex-col h-[190px] absolute inset-0 mt-180 space-y-4">
-                <div class="flex flex-row items-center pt-4 px-10 gap-5">
+            <div
+                class="w-full bg-[#212b59] flex flex-col md:h-[190px] h-fit absolute inset-0 mt-200 md:mt-210 space-y-4">
+                <div class="md:flex md:flex-row flex-col md:items-center  pt-4 px-10 gap-5 md:space-y-4">
                     <p class="noto text-2xl font-bold text-white">Find your course</p>
-                    <div class="bg-white w-[700px] h-[60px]">
-                    </div>
-                    <div class="border-[1px] flex items-center h-[60px] text-white p-4">
-                        <p class="noto">Search</p>
+                    <div class="flex flex-row md:space-x-9">
+                        <div class="bg-white md:w-[700px] w-[470px] h-[60px]">
+                        </div>
+                        <div class="border-[1px] md:hidden items-center h-[60px] text-white w-30 p-4">
+                            <img src="./assets/ra.svg" alt="" class="brightness-0 invert-100 w-5">
+                        </div>
+                        <div class="border-[1px] lg:flex items-center h-[60px] text-white p-4 hidden">
+                            <p class="noto">Search</p>
+                        </div>
                     </div>
                     <div class="">
-                        <ul class="noto font-semibold space-y-3 text-white text-lg">
+                        <ul class="noto font-semibold space-y-3 text-white md:flex md:flex-col hidden text-lg">
                             <li class="underline">Courses by A-Z</li>
                             <li class="underline">Courses by Subject</li>
                         </ul>
                     </div>
                 </div>
-                <div class="flex flex-row text-white noto text-xl space-x-3 items-center pl-63">
-                    <div class="flex flex-row items-center gap-2 ">
+                <div
+                    class="flex md:flex-row text-white noto text-xl md:space-x-3 flex-col md:items-center md:pl-63 p-10 space-y-2">
+                    <div class="md:flex-row items-center gap-2 flex">
                         <div class="rounded-full w-8 h-8 hover:cursor-pointer bg-[#212b59] border-[6px] border-white">
                         </div>
                         <p>Undergraduate</p>
@@ -111,90 +124,105 @@
                 </div>
             </div>
         </div>
-        <div class="mt-30 w-full flex flex-col space-y-4 px-3">
-            <p class="text-[40px] noto2  text-[#212a30] w-full">
+        <div class="md:mt-30 w-full flex flex-col space-y-4 md:px-3 mt-60 ">
+            <p class="md:text-[40px] text-[30px] noto2  text-[#212a30] w-full px-3 ">
                 Discover the University of Liverpool
             </p>
-            <div class="flex flex-row space-x-8">
-                <img src="./assets/le.jpeg" alt="" class="h-[400px] object-cover">
-                <div class="flex flex-col space-y-16 w-3/4  text-[#212b59] noto  justify-center">
-                    <div class="text-2xl">
+            <div class="flex md:flex-row md:space-x-8 flex-col space-y-4">
+                <img src="./assets/le.jpeg" alt="" class="md:h-[400px] object-cover order-3 md:order-none mt-8 h-fit">
+                <div
+                    class="flex flex-col md:space-y-16 md:w-3/4 w-full text-[#212a30] noto  justify-center space-y-12 order-1 md:order-none px-3">
+                    <div class="md:text-2xl text-[22px]">
                         <p>
                             We are the University of Liverpool. Located at the heart of a thrilling world city, we are a
                             dynamic institution of academic excellence and innovation, making a positive impact across
                             the United Kingdom and the wider world.
                         </p>
                     </div>
-                    <div class="text-lg">
+                    <div class="md:text-lg text-lg">
                         <p>
                             Since 1881, we've been at the forefront of world-class research and education, known for our
                             cutting-edge facilities and relentless pursuit of excellence and achievement. Find out how
-                            you can be part of our vibrant community and explore the work we’re doing with our famous
+                            you can be part of our vibrant community and explore the work we're doing with our famous
                             home city.
                         </p>
                     </div>
-                    <div class="flex flex-row space-x-4">
-                        <div class="border-[1px] border-black p-4 flex items-center">
+                    <div
+                        class="flex md:flex-row md:space-x-4 flex-col md:gap-2 space-y-7 md:h-20 order-2 md:order-none">
+                        <div
+                            class="border-[1px] border-black justify-center p-4 flex items-center hover:cursor-pointer hover:underline md:h-15">
                             <p>Learn more</p>
                         </div>
-                        <div class="border-[1px] border-black p-4 flex items-center">
+                        <div
+                            class="border-[1px] border-black p-4 flex justify-center items-center hover:cursor-pointer hover:underline md:h-15">
                             <p>Liverpool: Our city, our inspiration</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="px-3 bg-[#ef426f]   text-white flex flex-row items-center h-[150px] m-10 space-x-2 justify-between">
-            <img src="./assets/comp.svg" alt="" class="w-30 h-30 brightness-0 invert-100">
-            <div class="text-4xl noto2 font-bold w-100 flex items-center">
-                <p>Manage your offer</p>
-            </div>
-            <div class="w-120 text-3xl">
-                <p>Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
-            </div>
-            <div class="bg-[#212b58] text-white p-6 text-xl noto flex items-center">
-                Manage your offer now
+        <div
+            class="px-3 bg-[#ef426f]   text-white flex flex-row items-center md:h-[150px] h-140vh  md:m-10 md:space-x-2 space-x-3 justify-center  ">
+            <img src="./assets/comp.svg" alt="" class="md:w-30 w-25 h-40 brightness-0 invert-100 mb-40 md:mb-0">
+            <div class="flex md:flex-row flex-col space-y-5 items-center">
+                <div class="md:text-4xl text-3xl noto2 font-bold w-100 flex items-center ">
+                    <p>Manage your offer</p>
+                </div>
+                <div class="w-120 text-3xl">
+                    <p>Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
+                </div>
+                <div class="bg-[#212b58] text-white md:p-6 md:text-xl noto font-bold  flex items-center  p-4 group">
+                    <p class="group-hover:cursor-pointer group-hover:underline">Manage your offer now</p>
+                </div>
             </div>
         </div>
-        <div class="m-10 bg-[#212b58] flex flex-row space-x-1 items-center text-white h-[400px]">
-            <div class="flex flex-col space-y-3 w-[64%]">
-                <p class=" text-4xl noto2">Study with us</p>
-                <p class=" text-base noto font-semibold">
+        <div
+            class="md:m-10 bg-[#212b58] flex md:flex-row flex-col space-x-1 md:items-center md:px-6 text-white md:h-[400px] h-fit pb-8">
+            <div class="flex flex-col space-y-3 md:w-[64%] w-full">
+                <p class="md:text-4xl text-2xl noto2 md:order-none order-2 p-4 md:p-0">Study with us</p>
+                <p class="md:text-base text-lg noto font-semibold md:order-none order-3 px-4 md:px-0">
                     Discover endless possibilities. We offer a range of courses with support and expertise to help you
                     succeed in your future career. Find your perfect course, explore our subject areas or discover
                     everything you need to know about studying with us.
                 </p>
-                <div class="flex flex-row noto text-base flex-wrap space-x-4 space-y-2 w-[100%]">
-                    <div class="p-6 border-[1px] border-white flex items-center h-15">
-                        <p class="hover:underline">Undergraduate</p>
+                <div
+                    class="flex md:flex-row flex-col noto text-base md:flex-wrap md:space-x-4 space-y-2 w-[100%]  order-4 px-2 md:px-0">
+                    <div class="p-6 border-[1px] border-white flex md:items-center h-15 justify-center">
+                        <p class="hover:underline hover:cursor-pointer">Undergraduate</p>
                     </div>
-                    <div class="p-6 border-[1px] border-white flex items-center h-15">
-                        <p class="hover:underline">Master's</p>
+                    <div class="p-6 border-[1px] border-white flex md:items-center h-15 justify-center">
+                        <p class="hover:underline hover:cursor-pointer">Master's</p>
                     </div>
-                    <div class="p-6 border-[1px] border-white flex items-center h-15">
-                        <p class="hover:underline">Postgraduate research</p>
+                    <div class="p-6 border-[1px] border-white flex md:items-center h-15 justify-center">
+                        <p class="hover:underline hover:cursor-pointer">Postgraduate research</p>
                     </div>
-                    <div class="p-6 border-[1px] border-white flex items-center h-15">
-                        <p class="hover:underline">Continous Professional development</p>
+                    <div class="p-6 border-[1px] border-white flex md:items-center h-15 justify-center">
+                        <p class="hover:underline hover:cursor-pointer">Continous Professional development</p>
                     </div>
-                    <div class="p-4 border-[1px] border-white flex items-center h-15">
-                        <p class="hover:underline">International students </p>
+                    <div class="p-4 border-[1px] border-white flex md:items-center h-15 justify-center">
+                        <p class="hover:underline hover:cursor-pointer">International students </p>
                     </div>
                 </div>
             </div>
-            <img src="./assets/shoe.jpeg" alt="" class="w-[40%]  h-full">
+            <div class="flex md:order-none -order-4 w-full">
+                <img src="./assets/shoe.jpeg" alt="" class="md:w-[40%] w-full h-full ">
+            </div>
         </div>
-        <div class="px-3 bg-[#ef426f]   text-white flex flex-row items-center h-[150px] m-10 space-x-2 justify-between">
-            <img src="./assets/love.svg" alt="" class="w-30 h-30 brightness-0 invert-100">
-            <div class="text-5xl noto2 w-100 flex items-center">
-                <p>Visit us on an open Day</p>
-            </div>
-            <div class="w-120 text-3xl">
-                <p>Explore our campus and learn more about what it's like to live and study at Liverpool with our Open
-                    Days.</p>
-            </div>
-            <div class="bg-[#212b58] text-white p-6 text-xl noto flex items-center">
-                Book an Open Day
+        <div
+            class="px-3 bg-[#ef426f]   text-white flex flex-row h-140vh items-center md:h-[150px] md:m-10 space-x-3 md:justify-between justify-center">
+            <img src="./assets/love.svg" alt="" class="md:w-30 w-25 h-40 brightness-0 invert-100 mb-40 md:mb-0">
+            <div class="flex md:flex-row flex-col  space-y-6 items-center">
+                <div class="md:text-4xl text-3xl font-bold noto2 w-100 flex items-center">
+                    <p>Visit us on an open Day</p>
+                </div>
+                <div class="md:w-120 md:text-3xl w-105 text-3xl">
+                    <p>Explore our campus and learn more about what it's like to live and study at Liverpool with our
+                        Open
+                        Days.</p>
+                </div>
+                <div class="bg-[#212b58] text-white md:p-6 md:text-xl noto font-bold flex items-center p-4 group">
+                    <p class="group-hover:cursor-pointer group-hover:underline">Book an Open Day</p>
+                </div>
             </div>
         </div>
 
