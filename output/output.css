@@ -236,6 +236,9 @@
   .table {
     display: table;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -265,6 +268,18 @@
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
   }
   .h-\[4px\] {
     height: 4px;
@@ -626,6 +641,13 @@
       margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .space-x-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-7 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -703,6 +725,9 @@
   }
   .bg-\[\#212b59\] {
     background-color: #212b59;
+  }
+  .bg-\[\#edede9\] {
+    background-color: #edede9;
   }
   .bg-\[\#ef426f\] {
     background-color: #ef426f;
@@ -860,11 +885,17 @@
     --tw-tracking: var(--tracking-normal);
     letter-spacing: var(--tracking-normal);
   }
+  .text-\[\#\#212b58\] {
+    color: ##212b58;
+  }
   .text-\[\#1b223e\] {
     color: #1b223e;
   }
   .text-\[\#1e2649\] {
     color: #1e2649;
+  }
+  .text-\[\#21\] {
+    color: #21;
   }
   .text-\[\#121c45\] {
     color: #121c45;
@@ -880,6 +911,9 @@
   }
   .text-\[\#212b59\] {
     color: #212b59;
+  }
+  .text-\[\#333f4\] {
+    color: #333f4;
   }
   .text-\[\#333f47\] {
     color: #333f47;
